@@ -84,7 +84,10 @@ const Room = () => {
 
   useEffect(() => {
     const unsub = () => {
-      socket.current = io.connect("http://localhost:5000");
+      socket.current = io.connect(
+        "https://sonic-meet-backend.herokuapp.com/"
+        // process.env.SOCKET_BACKEND_URL || "http://localhost:5000"
+      );
       socket.current.on("message", (data) => {
         const audio = new Audio(msgSFX);
         if (user?.uid !== data.user.id) {
