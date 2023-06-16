@@ -50,7 +50,7 @@ const Room = () => {
 
   useEffect(() => {
     const unsub = () => {
-      socketRef.current = io.connect("http://localhost:5000");
+      socketRef.current = io.connect("https://meet-backend-nu.vercel.app");
       navigator.mediaDevices
         .getUserMedia({
           video: true,

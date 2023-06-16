@@ -85,7 +85,7 @@ const Room = () => {
   useEffect(() => {
     const unsub = () => {
       socket.current = io.connect(
-        "http://localhost:5000" //process.env.SOCKET_BACKEND_URL || "http://localhost:5000"
+        "https://meet-backend-nu.vercel.app" //process.env.SOCKET_BACKEND_URL || "https://meet-backend-nu.vercel.app"
       );
       socket.current.on("message", (data) => {
         const audio = new Audio(msgSFX);
