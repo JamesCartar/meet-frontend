@@ -3,7 +3,14 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  // your firebase config
+  apiKey: "AIzaSyCChTe-aaZSbryvKdInHO6Vb43tcqUvBCo",
+  authDomain: "meet-fee38.firebaseapp.com",
+  projectId: "meet-fee38",
+  databaseURL: "https://meet-fee38-default-rtdb.firebaseio.com",
+  storageBucket: "meet-fee38.appspot.com",
+  messagingSenderId: "722982990967",
+  appId: "1:722982990967:web:82e0d90cb2f94c67c6c272",
+  measurementId: "G-9S80GFCRDC"
 };
 
 const app = initializeApp(firebaseConfig);
