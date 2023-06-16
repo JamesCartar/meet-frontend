@@ -2,15 +2,17 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBSQwRtXiSGxDKKMsSww4eCAD5biYZpmmM",
-  authDomain: "aptm-e363c.firebaseapp.com",
-  databaseURL: "https://aptm-e363c-default-rtdb.firebaseio.com",
-  projectId: "aptm-e363c",
-  storageBucket: "aptm-e363c.appspot.com",
-  messagingSenderId: "779487278709",
-  appId: "1:779487278709:web:357dccabe968597a24aa3c",
-  measurementId: "G-HDBPZ76XLP"
+  apiKey: "AIzaSyCChTe-aaZSbryvKdInHO6Vb43tcqUvBCo",
+  authDomain: "meet-fee38.firebaseapp.com",
+  databaseURL: "https://meet-fee38-default-rtdb.firebaseio.com",
+  projectId: "meet-fee38",
+  storageBucket: "meet-fee38.appspot.com",
+  messagingSenderId: "722982990967",
+  appId: "1:722982990967:web:82e0d90cb2f94c67c6c272",
+  measurementId: "G-9S80GFCRDC"
 };
 
 const app = initializeApp(firebaseConfig);
