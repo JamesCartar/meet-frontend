@@ -85,7 +85,7 @@ const Room = () => {
   useEffect(() => {
     const unsub = () => {
       socket.current = io.connect(
-        "https://meet-backend-nu.vercel.app"
+        "https://meet2.ethical-digit.com"
         // process.env.SOCKET_BACKEND_URL || "http://localhost:5000"
       );
       socket.current.on("message", (data) => {
