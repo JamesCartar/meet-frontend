@@ -84,7 +84,7 @@ const Room = () => {
 
   useEffect(() => {
     const unsub = () => {
-      socket.current = io.connect("https://meet-backend-nu.vercel.app");
+      socket.current = io.connect("http://localhost:5000");
       socket.current.on("message", (data) => {
         const audio = new Audio(msgSFX);
         if (user?.uid !== data.user.id) {
