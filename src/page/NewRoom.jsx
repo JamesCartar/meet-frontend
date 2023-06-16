@@ -50,7 +50,7 @@ const Room = () => {
 
   useEffect(() => {
     const unsub = () => {
-      socketRef.current = io.connect("https://meet2.ethical-digit.com");
+      socketRef.current = io.connect("https://meet-backend-nu.vercel.app");
       navigator.mediaDevices
         .getUserMedia({
           video: true,
