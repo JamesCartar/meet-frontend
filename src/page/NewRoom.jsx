@@ -50,7 +50,7 @@ const Room = () => {
 
   useEffect(() => {
     const unsub = () => {
-      socketRef.current = io.connect("http://localhost:5000/");
+      socketRef.current = io.connect("https://meet2.ethical-digit.com");
       navigator.mediaDevices
         .getUserMedia({
           video: true,
